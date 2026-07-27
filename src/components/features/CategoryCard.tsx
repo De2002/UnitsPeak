@@ -26,6 +26,7 @@ const iconMap: Record<string, React.ElementType> = {
 /** Map converter id -> route path (add more as converters are built) */
 const CONVERTER_ROUTES: Record<string, string> = {
   length: "/converter/length",
+  "weight-mass": "/converter/weight",
 };
 
 interface CategoryCardProps {
