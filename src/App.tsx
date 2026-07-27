@@ -9,6 +9,8 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import LengthConverter from "./pages/converters/LengthConverter";
 import LengthPairConverter from "./pages/converters/LengthPairConverter";
+import WeightConverter from "./pages/converters/WeightConverter";
+import WeightPairConverter from "./pages/converters/WeightPairConverter";
 import About from "./pages/About";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/converter/length" element={<LengthConverter />} />
           <Route path="/converter/length/:pair" element={<LengthPairConverter />} />
+          <Route path="/converter/weight" element={<WeightConverter />} />
+          <Route path="/converter/weight/:pair" element={<WeightPairConverter />} />
           <Route path="/about" element={<About />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
