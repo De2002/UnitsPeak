@@ -28,6 +28,7 @@ const CONVERTER_ROUTES: Record<string, string> = {
   length: "/converter/length",
   "weight-mass": "/converter/weight",
   volume: "/converter/volume",
+  temperature: "/converter/temperature",
 };
 
 interface CategoryCardProps {

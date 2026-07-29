@@ -13,6 +13,8 @@ import WeightConverter from "./pages/converters/WeightConverter";
 import WeightPairConverter from "./pages/converters/WeightPairConverter";
 import VolumeConverter from "./pages/converters/VolumeConverter";
 import VolumePairConverter from "./pages/converters/VolumePairConverter";
+import TemperatureConverter from "./pages/converters/TemperatureConverter";
+import TemperaturePairConverter from "./pages/converters/TemperaturePairConverter";
 import About from "./pages/About";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
@@ -34,6 +36,8 @@ const App = () => (
           <Route path="/converter/weight/:pair" element={<WeightPairConverter />} />
           <Route path="/converter/volume" element={<VolumeConverter />} />
           <Route path="/converter/volume/:pair" element={<VolumePairConverter />} />
+          <Route path="/converter/temperature" element={<TemperatureConverter />} />
+          <Route path="/converter/temperature/:pair" element={<TemperaturePairConverter />} />
           <Route path="/about" element={<About />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
