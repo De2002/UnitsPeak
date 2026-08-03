@@ -1,4 +1,4 @@
-import heroBanner from "@/assets/hero-banner.jpg";
+const HERO_IMAGE = "https://images.pexels.com/photos/3183180/pexels-photo-3183180.jpeg?auto=compress&cs=tinysrgb&w=1600";
 
 const HeroSection = () => {
   return (
@@ -6,11 +6,14 @@ const HeroSection = () => {
       {/* Background image layer */}
       <div className="absolute inset-0 z-0">
         <img
-          src={heroBanner}
+          src={HERO_IMAGE}
           alt="UnitsPeak hero background"
-          className="w-full h-full object-cover opacity-[0.18] dark:opacity-30"
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background dark:from-background/60 dark:via-background/75 dark:to-background" />
+        {/* Light mode: semi-opaque white overlay so text stays readable */}
+        <div className="absolute inset-0 bg-white/75 dark:bg-black/60" />
+        {/* Directional gradient to fade into page background at bottom */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/50 to-background dark:from-background/30 dark:via-background/60 dark:to-background" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
